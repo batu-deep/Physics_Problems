@@ -1,236 +1,171 @@
 # Section 0: Mathematical Foundations — Solutions
 
-## 1. Vector Algebra  
-Given \(\vec a=\langle 2,1,-3\rangle\), \(\vec b=\langle 4,-2,1\rangle\).
+## 1. Vector Algebra
+Given:
+- a = [2, 1, -3]
+- b = [4, -2, 1]
 
 ### a) Magnitudes
-\[
-|\vec a|=\sqrt{2^2+1^2+(-3)^2}=\sqrt{4+1+9}=\sqrt{14}
-\]
-\[
-|\vec b|=\sqrt{4^2+(-2)^2+1^2}=\sqrt{16+4+1}=\sqrt{21}
-\]
+|a| = sqrt(2^2 + 1^2 + (-3)^2) = sqrt(4 + 1 + 9) = sqrt(14) ≈ 3.7417  
+|b| = sqrt(4^2 + (-2)^2 + 1^2) = sqrt(16 + 4 + 1) = sqrt(21) ≈ 4.5826
 
 ### b) Dot product
-\[
-\vec a\cdot \vec b = 2\cdot 4 + 1\cdot (-2) + (-3)\cdot 1 = 8-2-3=3
-\]
+a · b = 2*4 + 1*(-2) + (-3)*1 = 8 - 2 - 3 = 3
 
 ### c) Cross product
-\[
-\vec a\times \vec b=
-\begin{vmatrix}
-\mathbf i & \mathbf j & \mathbf k\\
-2&1&-3\\
-4&-2&1
-\end{vmatrix}
-\]
-\[
-= \mathbf i(1\cdot 1-(-3)(-2))-\mathbf j(2\cdot 1-(-3)\cdot 4)+\mathbf k(2\cdot (-2)-1\cdot 4)
-\]
-\[
-=\mathbf i(1-6)-\mathbf j(2-(-12))+\mathbf k(-4-4)
-\]
-\[
-=\langle -5,-14,-8\rangle
-\]
+a x b = [
+  a2*b3 - a3*b2,
+  a3*b1 - a1*b3,
+  a1*b2 - a2*b1
+]
 
-### d) Angle between \(\vec a\) and \(\vec b\)
-\[
-\cos\theta=\frac{\vec a\cdot \vec b}{|\vec a||\vec b|}=\frac{3}{\sqrt{14}\sqrt{21}}=\frac{3}{\sqrt{294}}
-\]
-\[
-\theta=\cos^{-1}\!\left(\frac{3}{\sqrt{294}}\right)\approx 80.0^\circ
-\]
+= [
+  1*1 - (-3)*(-2),
+  (-3)*4 - 2*1,
+  2*(-2) - 1*4
+]
 
----
+= [ 1 - 6,  -12 - 2,  -4 - 4 ]
+= [ -5, -14, -8 ]
+
+### d) Angle between a and b
+cos(theta) = (a · b) / (|a||b|) = 3 / (sqrt(14)*sqrt(21)) = 3 / sqrt(294)
+
+sqrt(294) ≈ 17.146  
+cos(theta) ≈ 3 / 17.146 ≈ 0.1749  
+theta ≈ arccos(0.1749) ≈ 79.9 degrees
+
 
 ## 2. Systems of Equations
-\[
-\begin{cases}
-2x+3y=12\\
-x-y=1
-\end{cases}
-\Rightarrow x=y+1
-\]
-Substitute:
-\[
-2(y+1)+3y=12 \Rightarrow 5y+2=12 \Rightarrow y=2
-\]
-\[
-x=y+1=3
-\]
-**Answer:** \((x,y)=(3,2)\)
+Solve:
+- 2x + 3y = 12
+- x - y = 1
 
----
+From x - y = 1 => x = 1 + y
+
+Substitute:
+2(1 + y) + 3y = 12
+2 + 2y + 3y = 12
+5y = 10
+y = 2
+
+Then x = 1 + 2 = 3
+
+Answer: x = 3, y = 2
+
 
 ## 3. Proportionality (Gravitation)
-\[
-F = G\frac{m_1m_2}{r^2}
-\]
-If \(r\to 2r\), and \(m_1\to \frac{m_1}{2}\), \(m_2\to \frac{m_2}{2}\):
-\[
-F' = G\frac{(\frac{m_1}{2})(\frac{m_2}{2})}{(2r)^2}
-=G\frac{\frac{m_1m_2}{4}}{4r^2}
-=G\frac{m_1m_2}{16r^2}
-=\frac{1}{16}F
-\]
-**Force becomes \(\boxed{\tfrac{1}{16}}\) of the original.**
+F = G * (m1*m2) / r^2
 
----
+Changes:
+- r is doubled: r' = 2r
+- both masses are halved: m1' = m1/2, m2' = m2/2
+
+New force:
+F' = G * ((m1/2)(m2/2)) / (2r)^2
+   = G * (m1*m2/4) / (4r^2)
+   = G * (m1*m2) / (16r^2)
+   = F / 16
+
+Answer: Force becomes 1/16 of the original (decreases by factor 16).
+
 
 ## 4. Rearranging Formulas (Pendulum)
-\[
-T=2\pi\sqrt{\frac{L}{g}}
-\]
-Divide by \(2\pi\):
-\[
-\frac{T}{2\pi}=\sqrt{\frac{L}{g}}
-\]
-Square:
-\[
-\left(\frac{T}{2\pi}\right)^2=\frac{L}{g}
-\]
-Solve for \(g\):
-\[
-g=\frac{L}{(T/2\pi)^2}=\frac{4\pi^2 L}{T^2}
-\]
-**Answer:** \(\boxed{g=\frac{4\pi^2 L}{T^2}}\)
+T = 2*pi * sqrt(L/g)
 
----
+T / (2*pi) = sqrt(L/g)
+(T / (2*pi))^2 = L/g
+g = L / (T/(2*pi))^2 = (4*pi^2*L) / T^2
 
-## 5. Trigonometry (Vector Components)
-Magnitude \(A=15\), angle \(\theta=60^\circ\) from horizontal.
-\[
-A_x=A\cos\theta=15\cos 60^\circ=15\cdot \frac12=7.5
-\]
-\[
-A_y=A\sin\theta=15\sin 60^\circ=15\cdot \frac{\sqrt3}{2}=\frac{15\sqrt3}{2}\approx 12.99
-\]
-**Components:** \(\boxed{(A_x,A_y)=\left(7.5,\frac{15\sqrt3}{2}\right)}\)
+Answer: g = 4*pi^2*L / T^2
 
----
+
+## 5. Trigonometry (Vector components)
+Magnitude |A| = 15, angle theta = 60 degrees
+
+Ax = 15*cos(60) = 15*(1/2) = 7.5
+Ay = 15*sin(60) = 15*(sqrt(3)/2) ≈ 15*0.8660 ≈ 12.99
+
+Answer: Ax = 7.5, Ay ≈ 12.99
+
 
 ## 6. Function Analysis
-\[
-f(x)=3x^2-12x+7
-\]
-Differentiate:
-\[
-f'(x)=6x-12
-\]
+f(x) = 3x^2 - 12x + 7
+
+Derivative:
+f'(x) = 6x - 12
+
 Critical point:
-\[
-6x-12=0 \Rightarrow x=2
-\]
+6x - 12 = 0 => x = 2
+
 Second derivative:
-\[
-f''(x)=6>0
-\]
-So \(x=2\) is a **local minimum**.
-\[
-f(2)=3(4)-12(2)+7=12-24+7=-5
-\]
-**Local minimum:** \(\boxed{(2,-5)}\).  
-**No local maximum** (parabola opens upward).
+f''(x) = 6 > 0  => local minimum
 
----
+Value at x=2:
+f(2) = 3*(4) - 12*(2) + 7 = 12 - 24 + 7 = -5
 
-## 7. Logic & Series (Fly and Bicycle)
-Bicycle is 10 m from wall, moves toward it at \(1\text{ m/s}\).  
-Time until bicycle hits wall:
-\[
-t=\frac{10}{1}=10\text{ s}
-\]
-Fly flies the entire time at \(2\text{ m/s}\) (turnarounds don’t change total path length).
-\[
-\text{Distance} = vt = 2\cdot 10 = 20\text{ m}
-\]
-**Answer:** \(\boxed{20\text{ m}}\)
+Answer: Local minimum at (2, -5). No local maximum.
 
----
+
+## 7. Logic & Series (Fly and bicycle)
+Bicycle is 10 m from wall, moves at 1 m/s toward wall.
+Time to reach wall: t = 10 / 1 = 10 s
+
+Fly moves continuously at 2 m/s for the same 10 s (instant turns don’t change total time).
+Distance fly travels: d = v*t = 2*10 = 20 m
+
+Answer: 20 m
+
 
 ## 8. Definite Integrals
-Area under \(f(x)=\sin x\) from \(0\) to \(\pi\):
-\[
-\int_0^\pi \sin x\,dx = \left[-\cos x\right]_0^\pi = (-\cos\pi)-(-\cos 0)= -(-1)-(-1)=1+1=2
-\]
-**Answer:** \(\boxed{2}\)
+Area under sin(x) from 0 to pi:
 
----
+Integral of sin(x) dx = -cos(x)
 
-## 9. Optimization (Max Area Rectangle)
-Rectangle under \(y=3-x^2\) in first quadrant, with upper-right corner at \((x,y)\) on curve.  
-Then \(y=3-x^2\), width \(=x\), height \(=y\).
-\[
-A(x)=x(3-x^2)=3x-x^3,\quad 0\le x\le \sqrt3
-\]
-Differentiate:
-\[
-A'(x)=3-3x^2=3(1-x^2)
-\]
+∫[0..pi] sin(x) dx = (-cos(pi)) - (-cos(0))
+= ( -(-1) ) - ( -(1) )
+= 1 - (-1)
+= 2
+
+Answer: 2
+
+
+## 9. Optimization Problem
+Rectangle under y = 3 - x^2 in first quadrant.
+Let top-right corner be (x, y) on curve, so y = 3 - x^2, with x >= 0.
+
+Area:
+A(x) = x*y = x(3 - x^2) = 3x - x^3
+
+Derivative:
+A'(x) = 3 - 3x^2
+
 Set to zero:
-\[
-1-x^2=0 \Rightarrow x=1 \quad (\text{first quadrant})
-\]
-Then
-\[
-y=3-1^2=2
-\]
-**Max-area rectangle dimensions:** \(\boxed{\text{width }1,\ \text{height }2}\)
+3 - 3x^2 = 0 => x^2 = 1 => x = 1 (first quadrant)
 
----
+Then y = 3 - 1^2 = 2
 
-## 10. Infinite Series (Ant’s Final Position)
-Moves: \(1\) east, \(\frac12\) north, \(\frac13\) west, \(\frac14\) south, \(\frac15\) east, ...
+Answer: Maximum area rectangle has width = 1 and height = 2.
 
-### x-coordinate (east-west)
-East steps: \(1+\frac15+\frac19+\cdots=\sum_{k=0}^\infty \frac{1}{4k+1}\)  
-West steps: \(\frac13+\frac17+\frac{1}{11}+\cdots=\sum_{k=0}^\infty \frac{1}{4k+3}\)
 
-Net:
-\[
-x=\sum_{k=0}^\infty\left(\frac{1}{4k+1}-\frac{1}{4k+3}\right)
-=1-\frac13+\frac15-\frac17+\cdots
-\]
-This is the Gregory–Leibniz series:
-\[
-1-\frac13+\frac15-\frac17+\cdots=\frac{\pi}{4}
-\]
-So \(\boxed{x=\frac{\pi}{4}}\).
+## 10. Infinite Series (Ant’s final position)
+Moves:
+1 east, 1/2 north, 1/3 west, 1/4 south, 1/5 east, ...
 
-### y-coordinate (north-south)
-North steps: \(\frac12+\frac16+\frac{1}{10}+\cdots=\sum_{k=0}^\infty \frac{1}{4k+2}\)  
-South steps: \(\frac14+\frac18+\frac{1}{12}+\cdots=\sum_{k=0}^\infty \frac{1}{4k+4}\)
+### x-position
+x = 1 - 1/3 + 1/5 - 1/7 + 1/9 - ...
+This is the alternating odd harmonic series:
+1 - 1/3 + 1/5 - 1/7 + ... = pi/4
 
-Net:
-\[
-y=\sum_{k=0}^\infty\left(\frac{1}{4k+2}-\frac{1}{4k+4}\right)
-=\sum_{k=0}^\infty\left(\frac{1}{2(2k+1)}-\frac{1}{4(k+1)}\right)
-\]
-Compute by splitting:
-\[
-\sum_{k=0}^\infty \frac{1}{4k+2}=\frac12\sum_{k=0}^\infty\frac{1}{2k+1}
-\]
-\[
-\sum_{k=0}^\infty \frac{1}{4k+4}=\frac14\sum_{k=1}^\infty\frac{1}{k}
-\]
-Using \(\sum_{k=0}^\infty \frac{1}{2k+1} = \sum_{k=1}^\infty\frac1k - \sum_{k=1}^\infty\frac{1}{2k}\),
-this simplifies to:
-\[
-y=\frac14\left(\sum_{k=1}^\infty\frac1k-\sum_{k=1}^\infty\frac{1}{2k}\right)
-=\frac14\left(H_\infty-\frac12H_\infty\right)
-\]
-More cleanly, recognize it as:
-\[
-y=\frac14\sum_{k=1}^\infty\frac{(-1)^{k-1}}{k}
-=\frac14\ln 2
-\]
-So \(\boxed{y=\frac{\ln 2}{4}}\).
+So x = pi/4 ≈ 0.7854
 
-### Final position
-\[
-\boxed{\left(\frac{\pi}{4},\frac{\ln 2}{4}\right)}
-\]
+### y-position
+y = 1/2 - 1/4 + 1/6 - 1/8 + 1/10 - ...
+Factor 1/2:
+y = (1/2) * (1 - 1/2 + 1/3 - 1/4 + 1/5 - ...)
+The alternating harmonic series equals ln(2).
 
----
+So y = (1/2)*ln(2) ≈ 0.3466
+
+Final position:
+(x, y) = (pi/4, (1/2)ln(2)) ≈ (0.7854, 0.3466)
