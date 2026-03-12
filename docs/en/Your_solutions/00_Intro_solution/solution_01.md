@@ -1,75 +1,73 @@
-## Problem 1. Vector Algebra for the L6 Physcics Basics
+# Solution 01 — Vector Algebra
 
-Given  
-$\vec{a}=[2,1,-3]$ and $\vec{b}=[4,-2,1]$.
+## Given
 
----
-
-### a) Magnitude of each vector
-
-Magnitude in 3D:
-
-$$
-|\vec{v}|=\sqrt{v_x^2+v_y^2+v_z^2}.
-$$
-
-For $\vec{a}$:
-
-$$
-|\vec{a}|=\sqrt{2^2+1^2+(-3)^2}
-=\sqrt{4+1+9}
-=\sqrt{14}.
-$$
-
-For $\vec{b}$:
-
-$$
-|\vec{b}|=\sqrt{4^2+(-2)^2+1^2}
-=\sqrt{16+4+1}
-=\sqrt{21}.
-$$
-
-So:
-
-$$
-|\vec{a}|=\sqrt{14},\qquad|\vec{b}|=\sqrt{21}.
-$$
+a = [2, 1, -3]  
+b = [4, -2, 1]
 
 ---
 
-### b) Dot product $\vec{a}\cdot\vec{b}$
+## a) Magnitudes
 
-Dot product:
+Magnitude formula:
 
-$$
-\vec{a}\cdot\vec{b}=a_xb_x+a_yb_y+a_zb_z.
-$$
+|v| = sqrt(x² + y² + z²)
 
-Compute:
+For vector a:
 
-$$
-\vec{a}\cdot\vec{b}=2\cdot4+1\cdot(-2)+(-3)\cdot1
-=8-2-3
-=3.
-$$
+|a| = sqrt(2² + 1² + (-3)²)  
+|a| = sqrt(4 + 1 + 9)  
+|a| = sqrt(14) ≈ 3.7417
 
-So:
+For vector b:
 
-$$
-\vec{a}\cdot\vec{b}=3.
-$$
+|b| = sqrt(4² + (-2)² + 1²)  
+|b| = sqrt(16 + 4 + 1)  
+|b| = sqrt(21) ≈ 4.5826
 
 ---
 
-### c) Cross product $\vec{a}\times\vec{b}$
+## b) Dot Product
 
-Use the determinant:
+Dot product formula:
 
-$$
-\vec{a}\times\vec{b}=
-\begin{vmatrix}
-\hat{i}&\hat{j}&\hat{k}\\
-2&1&-3\\
-4&-2&1
-\end{vmatrix}.
-$$
+a · b = a₁b₁ + a₂b₂ + a₃b₃
+
+a · b = (2×4) + (1×-2) + (-3×1)  
+a · b = 8 − 2 − 3  
+a · b = 3
+
+---
+
+## c) Cross Product
+
+Cross product formula:
+
+a × b = [a₂b₃ − a₃b₂ , a₃b₁ − a₁b₃ , a₁b₂ − a₂b₁]
+
+Substitute values:
+
+a × b = [ (1×1 − (-3×-2)), ((-3×4) − (2×1)), (2×-2 − 1×4) ]
+
+a × b = [1 − 6 , -12 − 2 , -4 − 4]
+
+a × b = [-5, -14, -8]
+
+---
+
+## d) Angle Between Vectors
+
+Formula:
+
+cos(θ) = (a · b) / (|a||b|)
+
+cos(θ) = 3 / (sqrt(14) × sqrt(21))
+
+sqrt(294) ≈ 17.146
+
+cos(θ) ≈ 3 / 17.146  
+cos(θ) ≈ 0.175
+
+θ = arccos(0.175)
+
+θ ≈ 79.9°
