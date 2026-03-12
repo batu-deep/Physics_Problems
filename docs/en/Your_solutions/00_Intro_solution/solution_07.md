@@ -1,5 +1,11 @@
 # Solution 07 — Logic & Series
-
+A bicycle is 10 meters from a wall and moves towards it at a constant speed of 
+1
+ m/s
+. A fly starts from the bicycle's front wheel and flies towards the wall at 
+2
+ m/s
+ When it hits the wall, it instantly turns back and flies to the bicycle, and so on. What is the total distance the fly travels before being crushed?
 Distance to wall = 10 m  
 Bicycle speed = 1 m/s
 
@@ -22,3 +28,4 @@ d = 20 m
 Final answer:
 
 The fly travels **20 meters**.
+
