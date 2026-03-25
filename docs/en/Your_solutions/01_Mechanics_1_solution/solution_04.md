@@ -1,38 +1,31 @@
-## Question 4 – Energy & Momentum
+## Question 4 – Vector Calculus
 
 **Problem:**  
-A block slides from 3 m and sticks to another block. Find final velocity.
+r(t) = (3t²)i + (5t − 8t²)j
 
 ---
 
-**Step 1: Convert potential energy into velocity**  
-Before collision:
-mgh = (1/2)mv² → v = √(2gh)
+**Step 1: Velocity is derivative of position**  
+v(t) = dr/dt  
 
-v ≈ 7.67 m/s
+Differentiate each component:
 
----
-
-**Step 2: Identify collision type**  
-Blocks stick → perfectly inelastic  
-→ momentum conserved, energy not conserved
+v = (6t)i + (5 − 16t)j
 
 ---
 
-**Step 3: Apply momentum conservation**  
-m₁v₁ = (m₁ + m₂)v_f
+**Step 2: Acceleration is derivative of velocity**  
+a(t) = dv/dt  
+
+a = (6)i − (16)j
 
 ---
 
-**Step 4: Solve for final velocity**  
-v_f = (0.5 × 7.67) / 2 ≈ 1.92 m/s
-
----
-
-**Interpretation:**  
-When mass increases, velocity must decrease to conserve momentum.
+**Step 3: Interpretation**  
+Acceleration is constant → motion is uniformly accelerated.
 
 ---
 
 **Final Answer:**  
-v_f ≈ 1.92 m/s
+v(t) = (6t, 5 − 16t)  
+a(t) = (6, −16)
