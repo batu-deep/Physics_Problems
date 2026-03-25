@@ -1,30 +1,48 @@
-
-## Question 3 – Conservation of Energy
+## Question 3 – Path Intersection
 
 **Problem:**  
-A pendulum (L = 1 m) is released from 15°. Find the speed at the bottom.
+A(t) = (2 + t, 8 − 3t)  
+B(t) = (2t − 1, 2t + 2)
 
 ---
 
-**Step 1:**  
-Use energy conservation:  
-Potential → kinetic
+**Step 1: Understand what “intersection” means**  
+They must be at the same position at the same time.
 
-**Step 2:**  
-Height difference:  
-h = L(1 − cosθ)
+So both x AND y coordinates must match for the same t.
 
-**Step 3:**  
-h ≈ 0.034 m
+---
 
-**Step 4:**  
-v = √(2gh)
+**Step 2: Compare x-coordinates**  
+2 + t = 2t − 1  
 
-**Step 5:**  
-v ≈ 0.82 m/s  
-→ Small angle → small speed.
+Solve:
+t = 3
+
+---
+
+**Step 3: Compare y-coordinates**  
+8 − 3t = 2t + 2  
+
+Solve:
+6 = 5t → t = 6/5
+
+---
+
+**Step 4: Compare results**  
+We get two different times:
+t = 3 and t = 6/5  
+
+This means they reach the same spatial point at different times.
+
+---
+
+**Step 5: Interpretation**  
+Paths intersect geometrically, but not physically at the same time → no collision.
+
+---
 
 **Final Answer:**  
-v ≈ 0.82 m/s
+No collision occurs
 
 ---
