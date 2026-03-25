@@ -1,32 +1,33 @@
-## Question 2 – Harmonic Motion
+## Question 2 – Range Optimization
 
 **Problem:**  
-A 10 kg mass oscillates as x(t) = 0.2 cos(10πt). Find the spring constant and total energy.
+Show maximum range occurs at 45°.
 
 ---
 
 **Step 1:**  
-Compare with SHM form:  
-x = A cos(ωt) → ω = 10π
+Start from range formula:  
+R(θ) = (v₀²/g) sin(2θ)
+
+---
 
 **Step 2:**  
-Use relation:  
-ω = √(k/m) → k = mω²
+Maximum occurs when sin(2θ) is maximum.
+
+---
 
 **Step 3:**  
-k ≈ 9869 N/m  
-→ Higher ω means stiffer spring.
+Maximum value of sin is 1 → happens at:  
+2θ = 90° → θ = 45°
 
-**Step 4:**  
-Energy formula:  
-E = (1/2)kA²
+---
 
-**Step 5:**  
-E ≈ 197 J  
-→ Energy depends on amplitude squared.
+**Interpretation:**  
+At 45°, horizontal and vertical components are balanced → maximum distance.
+
+---
 
 **Final Answer:**  
-k ≈ 9.87×10³ N/m  
-E ≈ 197 J
+Maximum range at θ = 45°
 
 ---
