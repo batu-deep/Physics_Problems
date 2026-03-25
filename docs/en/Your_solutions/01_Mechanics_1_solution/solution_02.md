@@ -1,33 +1,39 @@
 ## Question 2 – Range Optimization
 
 **Problem:**  
-Show maximum range occurs at 45°.
+Show that maximum range occurs at 45°.
 
 ---
 
-**Step 1:**  
-Start from range formula:  
+**Step 1: Start from known range formula**  
 R(θ) = (v₀²/g) sin(2θ)
 
 ---
 
-**Step 2:**  
-Maximum occurs when sin(2θ) is maximum.
+**Step 2: Understand structure of equation**  
+v₀²/g is constant → only sin(2θ) changes with θ
 
 ---
 
-**Step 3:**  
-Maximum value of sin is 1 → happens at:  
-2θ = 90° → θ = 45°
+**Step 3: Find maximum of sine function**  
+Maximum value of sin(x) is 1
+
+So:
+sin(2θ) = 1 → 2θ = 90°
+
+---
+
+**Step 4: Solve for θ**  
+θ = 45°
 
 ---
 
 **Interpretation:**  
-At 45°, horizontal and vertical components are balanced → maximum distance.
+At 45°, horizontal and vertical components are balanced → optimal distance.
 
 ---
 
 **Final Answer:**  
-Maximum range at θ = 45°
+Maximum range occurs at θ = 45°
 
 ---
