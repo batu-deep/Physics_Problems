@@ -2,41 +2,39 @@
 
 ### (a) Period on the Moon
 
-**Step 1: Start from the basic pendulum formula**  
-For a simple pendulum:
-T = 2π√(L/g)
+**Step 1:**  
+Use pendulum formula:  
+T = 2π√(L/g) → T ∝ 1/√g
 
-This tells us that the period depends on gravity as:
-T ∝ 1/√g  
-So if gravity decreases, period increases.
+**Step 2:**  
+Compare Earth and Moon:
+T_M = T_E √(g_E / g_M)
 
----
+**Step 3:**  
+g_M = g_E / 6 → T_M = 4√6
 
-**Step 2: Compare Earth and Moon using ratio**  
-Instead of solving from scratch, we compare:
-
-T_M / T_E = √(g_E / g_M)
-
----
-
-**Step 3: Substitute Moon gravity**  
-Given:
-g_M = g_E / 6
-
-So:
-T_M = T_E × √6
-
----
-
-**Step 4: Calculate numerical value**  
-T_M = 4 × √6 ≈ 4 × 2.45 ≈ 9.8 s
-
----
-
-**Physical Interpretation:**  
-Gravity is weaker on the Moon → pendulum swings slower → period increases.
-
----
+**Step 4:**  
+T_M ≈ 4 × 2.45 = 9.8 s
 
 **Final Answer:**  
 T_M ≈ 9.8 s
+
+---
+
+### (b) Length for T = 1 s
+
+**Step 1:**  
+T = 2π√(L/g)
+
+**Step 2:**  
+Rearrange:
+L = gT² / (4π²)
+
+**Step 3:**  
+L = 9.81 / (4π²)
+
+**Step 4:**  
+L ≈ 0.25 m
+
+**Final Answer:**  
+L ≈ 0.25 m
